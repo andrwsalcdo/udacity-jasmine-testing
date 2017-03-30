@@ -80,11 +80,17 @@ $(function() {
     describe('Initial Entries', function() {
 
 
-        /* TODO: Write a test that ensures when the loadFeed
+        /*  Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
+         */
+
+         /* According to the Jasmine documentation on asynchronous support,
+          * The spec will not start until the done function is called in
+          * the call to beforeEach.
+          * And the spec will not complete until its done is called again.
          */
          beforeEach(function(done) {
               loadFeed(0, done);

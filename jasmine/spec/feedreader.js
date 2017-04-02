@@ -46,7 +46,7 @@ $(function() {
           it('Name is defined and not empty', function() {
             allFeeds.forEach(function(feed) {
                   expect(feed.name).toBeDefined();
-                  expect(feed.name.length).not.toBe();
+                  expect(feed.name.length).not.toBe(0);
               });
           });
     });

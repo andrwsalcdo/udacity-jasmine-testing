@@ -98,7 +98,7 @@ $(function() {
               loadFeed(0, done);
          });
          it('.entry element appears in .feed after asynchronous loadFeed();', function(done) {
-              expect( $('.feed').length).toBeGreaterThan(0);
+              expect( $('.feed .entry').length).toBeGreaterThan(0);
               done();
          });
     });

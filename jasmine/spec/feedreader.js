@@ -97,9 +97,8 @@ $(function() {
          beforeEach(function(done) {
               loadFeed(0, done);
          });
-         it('.entry element appears in .feed after asynchronous loadFeed();', function(done) {
+         it('.entry element appears in .feed after asynchronous loadFeed();', function() {
               expect( $('.feed .entry').length).toBeGreaterThan(0);
-              done();
          });
     });
     /*  Write a new test suite named "New Feed Selection" */

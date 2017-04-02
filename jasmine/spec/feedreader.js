@@ -71,16 +71,14 @@ $(function() {
           */
           it('Toggle visibility when menu icon clicked', function() {
               $('.menu-icon-link').click();
-              expect(document.body.className).not.toContain('menu-hidden');
+                expect($(document.body).hasClass('menu-hidden')).toBe(false);
 
               $('.menu-icon-link').click();
-              expect(document.body.className).toContain('menu-hidden');
+                expect($(document.body).hasClass('menu-hidden')).toBe(true);
           });
-
     });
     /* Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function() {
-
 
         /*  Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
